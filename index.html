@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دعوة زفاف</title>
+    <style>
+        :root {
+            --bg-color: #F9F6F0;
+            --text-color: #5C4033;
+            --accent-color: #D2B48C;
+            --pink-soft: #FADADD;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            margin-top: 40px;
+        }
+
+        .rings {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: var(--text-color);
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-size: 16px;
+            font-style: italic;
+            opacity: 0.8;
+        }
+
+        .section {
+            margin: 40px 0;
+            padding: 20px;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+        }
+
+        .date-box {
+            font-size: 22px;
+            font-weight: bold;
+            color: #8B5A2B;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--text-color);
+            color: #fff;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-color);
+            color: var(--text-color);
+        }
+
+        .dress-code-dots {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .dot {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid #ddd;
+        }
+
+        /* ألوان الدريس كود */
+        .dot-pink { background-color: #F4C2C2; }
+        .dot-beige { background-color: #F5F5DC; }
+        .dot-brown { background-color: #8B5A2B; }
+        .dot-champagne { background-color: #F7E7CE; }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <div class="rings">💍</div>
+            <h1>لقد تلقيت دعوة زفاف</h1>
+            <p class="subtitle">من آدم وفرح</p>
+        </header>
+
+        <div class="section">
+            <h2>التاريخ</h2>
+            <p class="date-box">الجمعة، 10 يوليو 2026</p>
+            <p>يسعدنا حضوركم ومشاركتنا فرحتنا في هذا اليوم المميز</p>
+        </div>
+
+        <div class="section">
+            <h2>المكان</h2>
+            <p><strong>White Garden</strong></p>
+            <p>الشيخ زايد، القاهرة، مصر</p>
+            <a href="https://maps.google.com" target="_blank" class="btn">فتح الموقع في خرائط Google</a>
+        </div>
+
+        <div class="section">
+            <h2>قواعد اللباس (Dress Code)</h2>
+            <p>يسعدنا أن تشاركونا تناسق الألوان بألوان هادئة ودافئة:</p>
+            <div class="dress-code-dots">
+                <div class="dot dot-pink" title="وردي هادئ"></div>
+                <div class="dot dot-beige" title="بيج"></div>
+                <div class="dot dot-brown" title="بني دافئ"></div>
+                <div class="dot dot-champagne" title="شامبين"></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>تأكيد الحضور (RSVP)</h2>
+            <p>رجاءً أكد حضورك لمشاركتنا هذه الذكرى السعيدة</p>
+            <a href="https://forms.google.com" target="_blank" class="btn">اضغط هنا لتأكيد الحضور</a>
+        </div>
+
+        <footer>
+            <p style="font-size: 12px; opacity: 0.6; margin-top: 50px;">بكل الحب، ننتظركم!</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
