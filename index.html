@@ -3,149 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>دعوة زفاف</title>
+    <title>Ahmed & Ruqia Wedding</title>
     <style>
         :root {
-            --bg-color: #F9F6F0;
-            --text-color: #5C4033;
-            --accent-color: #D2B48C;
-            --pink-soft: #FADADD;
+            --bg-color: #F8F3EF; 
+            --text-color: #4A3728;
+            --accent: #C19A6B;
         }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-
-        .container {
-            max-width: 500px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        header {
-            margin-top: 40px;
-        }
-
-        .rings {
-            font-size: 50px;
-            margin-bottom: 10px;
-        }
-
-        h1 {
-            font-size: 28px;
-            color: var(--text-color);
-            margin-bottom: 5px;
-        }
-
-        .subtitle {
-            font-size: 16px;
-            font-style: italic;
-            opacity: 0.8;
-        }
-
-        .section {
-            margin: 40px 0;
-            padding: 20px;
-            background: #fff;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-        }
-
-        .date-box {
-            font-size: 22px;
-            font-weight: bold;
-            color: #8B5A2B;
-        }
-
-        .btn {
-            display: inline-block;
-            background-color: var(--text-color);
-            color: #fff;
-            padding: 12px 25px;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            margin-top: 15px;
-            transition: 0.3s ease;
-        }
-
-        .btn:hover {
-            background-color: var(--accent-color);
-            color: var(--text-color);
-        }
-
-        .dress-code-dots {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 15px;
-        }
-
-        .dot {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            border: 2px solid #ddd;
-        }
-
-        /* ألوان الدريس كود */
-        .dot-pink { background-color: #F4C2C2; }
-        .dot-beige { background-color: #F5F5DC; }
-        .dot-brown { background-color: #8B5A2B; }
-        .dot-champagne { background-color: #F7E7CE; }
-
+        body { font-family: 'Georgia', serif; background-color: var(--bg-color); color: var(--text-color); margin: 0; text-align: center; line-height: 1.6; }
+        .container { max-width: 450px; margin: 0 auto; padding: 40px 20px; }
+        .rings { width: 80px; margin-bottom: 20px; }
+        p { font-size: 16px; margin: 10px 0; }
+        .names { font-size: 36px; font-family: 'Brush Script MT', cursive; margin: 10px 0; color: var(--text-color); }
+        .photo-frame { display: flex; justify-content: center; gap: 15px; margin: 30px 0; }
+        .photo-frame div { font-size: 14px; font-weight: bold; }
+        .photo-frame img { width: 140px; height: 180px; object-fit: cover; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); margin-bottom: 5px; }
+        .section-title { font-size: 20px; letter-spacing: 2px; margin-top: 40px; border-bottom: 1px solid var(--accent); display: inline-block; padding-bottom: 5px; font-weight: normal; }
+        .month { font-size: 28px; letter-spacing: 5px; margin-top: 20px; font-weight: normal; }
+        .date-number { font-size: 50px; font-weight: bold; margin: 5px 0; color: var(--text-color); }
+        .program-item { text-align: right; margin: 15px 0; padding: 15px; border-right: 4px solid var(--accent); background: #fff; border-radius: 0 10px 10px 0; box-shadow: 2px 2px 5px rgba(0,0,0,0.05); }
+        .btn { display: block; background: var(--text-color); color: #fff; padding: 15px; text-decoration: none; border-radius: 30px; margin: 20px 0; font-weight: bold; font-size: 18px; }
+        footer { margin-top: 50px; font-style: italic; padding-bottom: 40px; }
     </style>
 </head>
 <body>
 
     <div class="container">
+        <!-- قسم الترحيب -->
+        <img src="https://cdn-icons-png.flaticon.com/512/3656/3656830.png" class="rings">
+        <p>You have received an invitation from</p>
+        <div class="names">Ahmed & Ruqia</div>
+
+        <div class="section-title">LET'S GET MARRIED</div>
         
-        <header>
-            <div class="rings">💍</div>
-            <h1>لقد تلقيت دعوة زفاف</h1>
-            <p class="subtitle">من آدم وفرح</p>
-        </header>
-
-        <div class="section">
-            <h2>التاريخ</h2>
-            <p class="date-box">الجمعة، 10 يوليو 2026</p>
-            <p>يسعدنا حضوركم ومشاركتنا فرحتنا في هذا اليوم المميز</p>
+        <!-- صور العروسين -->
+        <div class="photo-frame">
+            <div><img src="groom.jpg"><br>Ahmed</div>
+            <div><img src="bride.jpg"><br>Ruqia</div>
         </div>
 
-        <div class="section">
-            <h2>المكان</h2>
-            <p><strong>White Garden</strong></p>
-            <p>الشيخ زايد، القاهرة، مصر</p>
-            <a href="https://maps.google.com" target="_blank" class="btn">فتح الموقع في خرائط Google</a>
+        <p>Something wonderful is about to happen in our lives. We would be so happy to share this special day with the people who matter most to us — our family and dearest friends.</p>
+
+        <!-- التاريخ -->
+        <div class="month">NOVEMBER</div>
+        <div class="date-number">26</div>
+        <p>Thursday, November 26, 2026</p>
+
+        <!-- المكان -->
+        <div class="section-title">LOCATION</div>
+        <h3 style="margin-top:20px;">اسم القاعة هنا</h3>
+        <p>عنوان القاعة بالتفصيل، القاهرة، مصر.</p>
+        <a href="رابط_لوكيشن_القاعة" class="btn">Open in Google Maps</a>
+
+        <!-- البرنامج -->
+        <div class="section-title">PROGRAM</div>
+        
+        <div class="program-item">
+            <strong>5:00 PM</strong><br>Guest Arrival
+        </div>
+        <div class="program-item">
+            <strong>6:00 PM</strong><br>Ceremony
+        </div>
+        <div class="program-item">
+            <strong>7:30 PM</strong><br>Dinner
+        </div>
+        <div class="program-item">
+            <strong>9:00 PM</strong><br>Party
         </div>
 
-        <div class="section">
-            <h2>قواعد اللباس (Dress Code)</h2>
-            <p>يسعدنا أن تشاركونا تناسق الألوان بألوان هادئة ودافئة:</p>
-            <div class="dress-code-dots">
-                <div class="dot dot-pink" title="وردي هادئ"></div>
-                <div class="dot dot-beige" title="بيج"></div>
-                <div class="dot dot-brown" title="بني دافئ"></div>
-                <div class="dot dot-champagne" title="شامبين"></div>
-            </div>
-        </div>
-
-        <div class="section">
-            <h2>تأكيد الحضور (RSVP)</h2>
-            <p>رجاءً أكد حضورك لمشاركتنا هذه الذكرى السعيدة</p>
-            <a href="https://forms.google.com" target="_blank" class="btn">اضغط هنا لتأكيد الحضور</a>
-        </div>
+        <!-- تأكيد الحضور -->
+        <div class="section-title">RSVP</div>
+        <p>Please let us know if you can make it.</p>
+        <a href="رابط_جوجل_فورم" class="btn">Fill the Form</a>
 
         <footer>
-            <p style="font-size: 12px; opacity: 0.6; margin-top: 50px;">بكل الحب، ننتظركم!</p>
+            With Love,<br>
+            <div class="names" style="font-size: 24px;">Ahmed & Ruqia</div>
         </footer>
-
     </div>
 
 </body>
 </html>
+
